@@ -11,13 +11,19 @@
         <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
       </section>
     <script>
-       const sect = document.querySelector('section');
+      const sect = document.querySelector('section');
       const para = document.createElement('p');
       para.textContent = 'これは追加したパラグラフです。';
       sect.appendChild(para);
+      para.style.color = 'white';
+      para.style.backgroundColor = 'black';
+      para.style.padding = '10px';
+      para.style.width = '250px';
+      para.style.textAlign = 'center';
+      Copy to Clipboard
       const text = document.createTextNode(' — the premier source for web development knowledge.');
       const linkPara = document.querySelector('p');
-linkPara.appendChild(text);
+      linkPara.appendChild(text);
     </script>
   </body>
 </html>
